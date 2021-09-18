@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_making_process_making_processes",
+  "info": {
+    "name": "making_process",
+    "icon": "address-book"
+  },
+  "options": {},
+  "attributes": {
+    "text": {
+      "type": "string"
+    }
+  }
+}

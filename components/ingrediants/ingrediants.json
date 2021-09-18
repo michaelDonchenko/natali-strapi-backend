@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_ingrediants_ingrediants",
+  "info": {
+    "name": "ingrediants",
+    "icon": "adjust"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    }
+  }
+}

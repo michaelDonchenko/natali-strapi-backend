@@ -1,0 +1,70 @@
+{
+  "kind": "collectionType",
+  "collectionName": "recipes",
+  "info": {
+    "name": "recipe",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "main_image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "files",
+        "images",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": true,
+      "pluginOptions": {}
+    },
+    "inside_image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "files",
+        "images",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": true,
+      "pluginOptions": {}
+    },
+    "process": {
+      "type": "component",
+      "repeatable": true,
+      "component": "making-process.making-process"
+    },
+    "description": {
+      "type": "text"
+    },
+    "ingrediant": {
+      "type": "component",
+      "repeatable": true,
+      "component": "ingrediants.ingrediants"
+    },
+    "featured": {
+      "type": "boolean"
+    },
+    "categories": {
+      "via": "recipes",
+      "collection": "category"
+    },
+    "coockTime": {
+      "type": "integer"
+    },
+    "servings": {
+      "type": "integer"
+    }
+  }
+}
